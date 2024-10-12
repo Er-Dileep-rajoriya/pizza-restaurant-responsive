@@ -1,0 +1,478 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+/* header section start */
+.nav-section {
+  display: flex;
+  gap: 10px;
+  width: 100vw;
+  color: rgb(218, 209, 209);
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#heading {
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.nav-menu-left {
+  width: 25%;
+  /* border: 1px solid red; */
+}
+
+.nav-menu-center {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  flex-grow: 1;
+}
+
+.nav-menu-center li a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.554);
+}
+
+.nav-menu-center li a:hover {
+  border-bottom: 1px solid white;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+.nav-menu-right {
+  width: 20%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 20px;
+  gap: 20px;
+}
+
+.nav-menu-right img {
+  height: 36px;
+}
+
+.nav-menu-right img:hover {
+  cursor: pointer;
+}
+
+/* hero section start */
+.hero-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 100vw;
+  height: auto;
+  gap: 40px;
+  background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBpenphJTIwcG5nfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.hero-heading {
+  width: 50%;
+  font-size: 6rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 20px solid #f24c4c;
+}
+
+.hero-para {
+  width: 45%;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 950px) {
+  .hero-heading {
+    width: 100%;
+    font-size: 2rem;
+    border-bottom: 8px solid #f24c4c;
+  }
+
+  .hero-para {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .hero-image-section {
+    width: 100vw;
+    border: 2px solid gray;
+  }
+}
+
+/* hero section end */
+
+/* header section end */
+
+/* about section start */
+
+.heading-text {
+  text-align: center;
+  /* width: 100%; */
+  color: white;
+  font-size: 2.5rem;
+  border-bottom: 3px solid #f24c4c;
+}
+
+h3 {
+  text-align: center;
+}
+
+.about-section {
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+  padding: 40px;
+  /* border: 2px solid red; */
+}
+
+.about-content {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-section .left {
+  width: 30%;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-family: Ruda;
+  /* border: 2px solid red; */
+  text-align: justify;
+  padding-top: 10px;
+  border-top: 5px solid #f24c4c;
+}
+
+.about-section .right {
+  width: 50%;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+.about-section .right img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 950px) {
+  .about-section .left {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding-top: 7px;
+    border-top: 5px solid #f24c4c;
+  }
+
+  .about-section .right {
+    width: 100%;
+  }
+
+  .heading-text {
+    font-size: 2rem;
+  }
+}
+
+/* about section end */
+
+/* Menu section start */
+
+.menu-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.menu-section .menu-para {
+  width: 88%;
+  text-align: justify;
+  color: #ffffffb5;
+  line-height: 2.2rem;
+  font-size: 1.7rem;
+}
+
+.menu-bottom {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.menu-bottom > div {
+  width: 450px;
+  height: 150px;
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+.menu-bottom .left {
+  width: 45%;
+}
+
+.menu-bottom .right {
+  width: 55%;
+}
+
+.menu-bottom .left img {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+}
+
+.menu-bottom .right {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-bottom .right .top {
+  font-size: 1.5rem;
+  color: #f2c94c;
+}
+
+.menu-bottom .right .bottom {
+  color: #ffffffa6;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 950px) {
+  .menu-section .menu-para {
+    line-height: 1.4rem;
+    font-size: 1rem;
+  }
+
+  .menu-bottom > div {
+    width: 88%;
+    height: 150px;
+  }
+
+  .menu-bottom .right .top {
+    font-size: 1.1rem;
+  }
+
+  .menu-bottom .right .bottom {
+    font-size: 1rem;
+  }
+}
+
+/* Menu section end */
+
+/* Find us section start */
+.find-us-section {
+  margin-top: 40px;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 40px;
+}
+
+.find-us-section .top {
+  width: 100%;
+  height: 100%;
+}
+
+.find-us-section .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.find-us-section .bottom .left {
+  width: 50%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.623);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; */
+}
+
+.find-us-section .desc {
+  width: 60%;
+  text-align: justify;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.find-us-section .location {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.find-us-section .location img {
+  height: 40px;
+  color: white;
+}
+
+.find-us-section .contact {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.find-us-section .bottom .right {
+  width: 50%;
+}
+
+.find-us-section .bottom .right img {
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .find-us-section .bottom .left {
+    width: 100%;
+  }
+
+  .find-us-section .bottom .right {
+    width: 100%;
+  }
+}
+
+/* Find us section end */
+
+/* last section start */
+.last-section {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgba(245, 245, 245, 0.683);
+}
+
+.last-section .left {
+  font-size: 7rem;
+}
+
+.last-section .right {
+  font-size: 1.3rem;
+}
+
+.last-section .right i {
+  margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .last-section .left {
+    font-size: 4rem;
+  }
+}
+/* last section end */
+
+/* Gallary section start */
+.gallary-section {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.622);
+  /* border: 2px solid red; */
+}
+
+/* .gallary-section .top {
+  border: 2px solid red;
+} 
+*/
+
+.gallary-section .bottom {
+  width: 100%;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.gallary-section .bottom .left {
+  flex-grow: 1;
+  height: 50%;
+  /* border: 2px solid red; */
+}
+.gallary-section .bottom .left img {
+  height: 100%;
+}
+.gallary-section .bottom .center {
+  width: 30%;
+  height: 50%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.gallary-section .bottom .center img {
+  height: 33.3%;
+}
+
+.gallary-section .bottom .right {
+  width: 30%;
+  height: 50%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.gallary-section .bottom .right img {
+  height: 50%;
+}
+
+/* Gallary section end */
+
+/* Carousel section */
+
+.carousel-section {
+  margin-top: 30px;
+  width: 80%;
+  /* border: 2px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+}
